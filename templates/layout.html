@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="canonical" href="https://www.qualitydrycleanerz.co.uk/" />
+    <meta property="og:title" content="Quality Dry Cleaners : Best Dry Cleaners Services Near Me" />
+    <meta property="og:type" content="Dry Cleaners" />
+    <meta property="og:description"
+        content="Looking For A Best Dry Cleaners Near You? We Pride Ourselves On Our Commitment To Provide A Professional And Speedy Dry Cleaning Service At All Times." />
+    <meta property="og:url" content="https://www.qualitydrycleanerz.co.uk/" />
+    <meta property="og:image" content="https://www.qualitydrycleanerz.co.uk/img/Main-image/shop.jpg" />
+    <meta name="keywords" content="dry cleaning, same day dry clean, swindon, cloths wash, launderate, suits clean" />
+    <meta name="description"
+        content="Looking For A Best Dry Cleaners Near You? We Pride Ourselves On Our Commitment To Provide A Professional And Speedy Dry Cleaning Service At All Times." />
+    <meta name="author" content="Faran" />
+
+    <!-- Title  -->
+    <title>{%block title %}{%endblock%}</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="/static/css/plugins.css" />
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="/static/css/style.css?1" />
+    <link rel="stylesheet" href="/static/css/font-awesome.css" />
+    <style>
+        .caret {
+            display: none !important
+        }
+
+        .navbar-toggler {
+            padding: .90rem 1rem;
+            font-size: 1.25rem;
+        }
+
+        .modal-header .close {
+            width: 50px;
+        }
+
+        .modal-footer button.btn.btn-default {
+            padding: 11px 19px;
+        }
+
+        @media all and (max-width: 520px) {
+            .footer-links a {
+                padding-top: 17px;
+                padding-bottom: 16px;
+                line-height: 1em;
+            }
+        }
+
+        .bootstrap-select {
+            width: 100% !important;
+        }
+
+        @media only screen and (min-width: 968px) {
+            .auto-complete-address-boostrap-only {
+                width: 27rem
+            }
+        }
+
+        @media only screen and (max-width: 967px) {
+            .auto-complete-address-boostrap-only {
+                width: 15rem
+            }
+        }
+
+        .sub_btn:after {
+            display: none;
+        }
+    </style>
+
+
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0//static/css/bootstrap.min.css'> -->
+    <link rel="stylesheet" href="/static/css/plugins/auto-complete-address-boostrap-only.css" />
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3//static/css/bootstrap-select.min.css'>
+    <link rel='stylesheet'
+        href='https://cdnjs.cloudflare.com/ajax/libs/ajax-bootstrap-select/1.3.8//static/css/ajax-bootstrap-select.min.css'>
+    {% block head %}{%endblock%}
+</head>
+
+<body>
+    <script>
+        var url = window.location.href;
+        if (url == "https://www.qualitydrycleanerz.co.uk/index.html#success") {
+            window.location = '#contact';
+            setInterval(function () { $('#smsg').show(); }, 2000);
+        } else if (url == "https://www.qualitydrycleanerz.co.uk/index.html#error") {
+            window.location = '#contact';
+            setInterval(function () { $('#emsg').show(); }, 2000);
+        }
+    </script>
+    <!-- =====================================
+      ==== Start Loading -->
+
+    <!-- <div class="loading">
+        <div class="text-center middle">
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- End Loading ====
+      ======================================= -->
+
+
+    <!-- =====================================
+      ==== Start Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="logo" href="/">
+                <img src="/static/img/logo-light.png" alt="logo">
+            </a>
+            <div id="main">
+                <div id="timeDiv"></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar"><i class="fas fa-bars"></i></span>
+            </button>
+
+            <!-- navbar links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/" data-scroll-nav="0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="1">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="2">Special Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="3">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="4">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-scroll-nav="5">Contact US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.php">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar ====
+      ======================================= -->
+    {% block content %}
+
+    <!-- =====================================
+      ==== Start Header -->
+
+    <header class="header valign bg-img creative" data-scroll-index="0" data-overlay-dark="5"
+        data-background="/static/img/Main-image/shop.jpg" data-stellar-background-ratio="0.5">
+
+        <div class="container">
+            <div class="row">
+                <div class="full-width text-center caption mt-30">
+                    <h3>Our Specialities</h3>
+                    <h1 class="cd-headline clip">
+                        <span class="blc">We Do </span>
+                        <span class="cd-words-wrapper">
+                            <b class="is-visible">"Drycleaning"</b>
+                            <b>"Alterations"</b>
+                            <b>"Ironing"</b>
+                            <b>"Dresses"</b>
+                            <b>"Curtains"</b>
+                            <b>"Shirts"</b>
+                            <b>"Sofa-covers"</b>
+                            <b>"Leather"</b>
+                            <b>"School Uniform"</b>
+                            <b>"Hand Finish"</b>
+                            <b>"Household"</b>
+                        </span>
+                    </h1>
+                    <p>Swindon No.1 Dry Cleaners | Alterations | Laundry Service.</p>
+                    <a href="/shop-pricing" class="butn butn-bord">
+                        <span>Shop Prices</span>
+                    </a>
+                    <a href="/delivery-pricing" class="butn butn-bg">
+                        <span>Delivery Prices</span>
+                    </a>
+
+                    <p>You've Tried The Rest! Now Try The Best!</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="arrow">
+            <a href="#" data-scroll-nav="1">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- End Header ====
+      ======================================= -->
+
+    <div class="row mt-4">
+        <div class="col-md-12 text-center">
+            <h5>ARRANGE A Collection Now!</h5>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <div class="col-md-4"></div>
+        <div class="col-md-6">
+            <form class="input-group mb-3 post-code-form" action="booking.php" method="POST">
+                <div class="auto-complete-address-boostrap-only">
+                    <select id="ajax-select" required class="selectpicker with-ajax" data-live-search="true"></select>
+                </div>
+                <div class="input-group-append">
+                    <button style="height: 35px;" class="btn btn-outline-secondary post-code-btn butn butn-bg"
+                        type="submit">Book Now</button>
+                </div>
+                <div class="hidden">
+                    <input type="hidden" name="firstLineAddress" id="firstLineAddress">
+                    <input type="hidden" name="city" id="city">
+                    <input type="hidden" name="postcode" id="postcode">
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+
+
+    <!-- =====================================
+      ==== Start Hero -->
+    <div class="cinfo">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 center mb1">
+                    <a href="tel:01793617307"><i class="fa fa-phone roundi_blue blue"></i></a>
+                    <div class="center act">
+                        CALL
+                    </div>
+                    <div class="binfo center">
+                        Call Today On: 01793 617307
+                    </div>
+                </div>
+                <div class="col-md-4 center mb1">
+                    <a href="#contact"><i class="fa fa-map-marker roundi_red red"></i></a>
+                    <div class="center act">
+                        FIND US
+                    </div>
+                    <div class="binfo center">
+                        100 Commercial Road, SN1 5PL
+                    </div>
+                </div>
+                <div class="col-md-4 center mb1">
+                    <a href="mailto:info@qualitydrycleanerz.co.uk"><i
+                            class="fa fa-envelope roundi_yellow yellow"></i></a>
+                    <div class="center act">
+                        E-MAIL
+                    </div>
+                    <div class="binfo center">
+                        Click <a href="#contact">HERE</a> To Drop Us An Email
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hero section-padding pb-0" data-scroll-index="3">
+        <div class="container mt4 mb4">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="mission" id="whychoose">
+
+                        <div class="row mt-4">
+                            <div class="col-md-12 text-center">
+                                <h4 class="extra-text"> <span>About</span> Us.</h4>
+                                <p>We are a family run business formed in September 2009 based in the Swindon town
+                                    centre, we are ideally situated to provide the best dry cleaning services to the
+                                    local area.</p>
+
+                                <p>Today we are recognised Swindon best Dry Cleaners by our customers.. Our success is
+                                    based on two main factors: loyalty and feedback from our customers. We work with a
+                                    passion to deliver astounding customer service, quality. However, the most important
+                                    factor is our non-stop commitment to invest in training and cutting-edge
+                                    eco-friendly technology.</p>
+
+                                <br>
+                                <p>Our aim is to serve the local community with a friendly and sensibly priced service
+                                    within the dry cleaning, laundry and tailoring fields. We offer our customers the
+                                    highest level of service, be they domestic or commercial, and we take pride in our
+                                    quality service that is tailored to meet customer needs. Attention to detail is
+                                    important to us, as is your trust and ensuring your garments are treated with the
+                                    utmost respect. You can rest assured you will receive what you’re looking for from
+                                    us.</p>
+                                <br>
+                                <p>We welcome you to pop in and visit us, or to give us a call on 01793 617307 and we
+                                    will make sure to accommodate you and answer any questions you might have. </p>
+
+                                <p>If you’d like to see our price list before getting in contact, you can find it by
+                                    clicking on Store price list just above </p>
+                                <br>
+                                <p>You can also see a full list of the extensive services we offer our website </p>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt4">
+                            <div class="col-lg-7 mt4">
+                                <div class="mission">
+
+                                    <div class="section-head mb-30">
+                                        <h4><span>Our</span><br>
+                                            Mission
+                                        </h4>
+                                    </div>
+
+                                    <p>Every customer is treated fairly, we don’t cut corners, we keep our promises and
+                                        we do the right
+                                        thing. Our approach ensures our customers, not only love our service but also
+                                        trust our team.
+                                        The spring fresh smell, razor sharp pressing and impeccable cleaning is driven
+                                        by our dry
+                                        cleaners’ passion and pride in their work.</p>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="skills">
+
+                                    <div class="prog-item">
+                                        <p>Quality</p>
+                                        <div class="skills-progress"><span data-value='100%'></span></div>
+                                    </div>
+                                    <div class="prog-item">
+                                        <p>Returning Customers</p>
+                                        <div class="skills-progress"><span data-value='100%'></span></div>
+                                    </div>
+                                    <div class="prog-item">
+                                        <p>Affordable</p>
+                                        <div class="skills-progress"><span data-value='90%'></span></div>
+                                    </div>
+                                    <div class="prog-item">
+                                        <p>Same Day Service</p>
+                                        <div class="skills-progress"><span data-value='100%'></span></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+    </section>
+
+    <section class="hero section-padding pb-0" data-scroll-index="3">
+        <div class="container mt4 mb4">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="mission" id="whychoose">
+
+                        <div class="section-head mb-30">
+                            <h4><span>Why</span><br>
+                                Choose Us
+                            </h4>
+                        </div>
+
+                        <p>We have been providing professional dry cleaning and laundry services in Swindon to
+                            individuals and corporate customers for over 10 years.
+                            Our success and growth is due to our commitment to provide the best quality dry cleaning and
+                            laundry at very competitive prices and impeccable service.</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt2">
+                <div class="col-md-3">
+                    <div class="wubox">
+                        <div class="wuimg"><i class="fa fa-credit-card"></i></div>
+                        <h4>Affordable Prices</h4>
+                        <p>Enjoy the most affordable prices on the market</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="wubox">
+                        <div class="wuimg"><i class="fa fa-hand-point-right"></i></div>
+                        <h4>Easy to Use</h4>
+                        <p>Getting the laundry done has never been easier.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wubox">
+                        <div class="wuimg"><i class="fa fa-truck"></i></div>
+                        <h4>Collection & Delivery</h4>
+                        <p>We’ll pick up your clothes and drop them off again.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="wubox">
+                        <div class="wuimg"><i class="fa fa-star"></i></div>
+                        <h4>Quality Cleaning</h4>
+                        <p>We carefully clean, fold, and package your clothes ready to be returned to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="hero section-padding pb-0" data-scroll-index="2">
+
+        <div class="feat bg-gray pt-80 pb-50 mt-80">
+            <div class="container" id="offers">
+                <div class="section-head mb-30">
+                    <h4><span>Special</span><br>
+                        Offers
+                    </h4>
+                </div>
+                <div class="row">
+
+
+                    <div class="col-md-3">
+                        <div class="item">
+                            <span class="icon"><img src="/static/img/Offers/1.png" alt="2-piece-suit-offer"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <span class="icon"><img src="/static/img/Offers/2.png" alt="3-piece-suit-offer"></i></span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <span class="icon"><img src="/static/img/Offers/3.png" alt="patio-offer"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <span class="icon"><img src="/static/img/Offers/4.png" alt="window-offer"></i></span>
+                        </div>
+                    </div>
+                    <div class="sharethis-inline-share-buttons"></div>
+                    <script type="text/javascript"
+                        src="https://platform-api.sharethis.com/js/sharethis.js#property=5eada2e74ba4f9001384cafc&product=inline-share-buttons"
+                        async="async"></script>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- End Hero ====
+      ======================================= -->
+
+
+
+
+    <!-- =====================================
+      ==== Start Numbers -->
+
+    <div class="numbers section-padding bg-img" data-overlay-dark="6"
+        data-background="/static/img/Backgroundimages/bg322.jpg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="item text-center mb-md50">
+                        <span class="icon"><i class="icofont icofont-users-alt-3"></i></span>
+                        <h2 class="count">9500</h2>
+                        <h6>Happy Clients</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="item text-center mb-md50">
+                        <span class="icon"><i class="icofont icofont-briefcase-alt-2"></i></span>
+                        <h2 class="count">1,500,000</h2>
+                        <h6>Garments Cleaned</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="item text-center mb-sm50">
+                        <span class="icon"><i class="icofont icofont-brainstorming"></i></span>
+                        <h2 class="count">5</h2>
+                        <h6>Google Rating</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="item text-center">
+                        <span class="icon"><i class="icofont icofont-growth"></i></span>
+                        <h2 class="count">5000</h2>
+                        <h6>Alterations Completed </h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End Numbers ====
+      ======================================= -->
+
+
+    <!-- =====================================
+      ==== Start Services -->
+
+    <section class="services section-padding pb-70" data-scroll-index="4" id="services">
+        <div class="container mt4">
+            <div class="row">
+
+                <div class="section-head col-sm-12">
+                    <h4>
+                        <span>Our </span><br>
+                        Services
+                    </h4>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="dry-cleaning.html">
+                            <h6>Dry Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="laundry-service.html">
+                            <h6>Laundry Service</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="ironing.html">
+                            <h6>Ironing</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="shirt-service.html">
+                            <h6>Shirts Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="corporate-service.html">
+                            <h6>Corporate Service</h6>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="collection-delivery.html">
+                            <h6>Collection & Delivery</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="1-hour-cleaning.html">
+                            <h6>1 Hour Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="2-hours-cleaning.html">
+                            <h6>2 Hours Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="same-day-service.html">
+                            <h6>Same Day Service</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="express-service.html">
+                            <h6>Express Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="alterations-repairs.html">
+                            <h6>Alterations & Repairs</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="curtains-cleaning.html">
+                            <h6>Curtains Alterations</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="hotel-service.html">
+                            <h6>Hotel Service</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="household-dry-cleaning.html">
+                            <h6>Household Dry Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="towels.html">
+                            <h6>Towels</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="work-wear.html">
+                            <h6>Work Wear</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="wedding-dresses.html">
+                            <h6>Wedding Dresses</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="suede-cleaning.html">
+                            <h6>Suede Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="sports-clothing.html">
+                            <h6>Sports Clothing</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="specialist-services.html">
+                            <h6>Specialist Services</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="military-dry-cleaning.html">
+                            <h6>Military Uniform</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="military-alterations.html">
+                            <h6>Military Alterations</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="leather.html">
+                            <h6>Leather</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="hotel-service.html">
+                            <h6>Hotel Service</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="grooms-suit-cleaning.html">
+                            <h6>Grooms Suit Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="duvets.html">
+                            <h6>Duvets</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="dresses.html">
+                            <h6>Dresses</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="curtains-cleaning.html">
+                            <h6>Curtains Cleaning</h6>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="children-wear.html">
+                            <h6>Children Wear</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="item">
+                        <span class="icon"></i></span>
+                        <a href="bed-linen.html">
+                            <h6>Bed Linen</h6>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- End Services ====
+      ======================================= -->
+
+
+
+
+    <!-- =====================================
+        ==== Start Testimonails -->
+
+    <div class="testimonails bg-img section-padding" data-overlay-dark="7"
+        data-background="/static/img/Backgroundimages/bg334.jpg">
+        <div class="container">
+            <div class="row">
+
+                <div class="offset-lg-1 col-lg-10 text-center over">
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="citem">
+                            <div class="client-img">
+                                <img src="/static/img/1.png" alt="testimonails">
+                            </div>
+                            <h5>Tim Duggan</h5>
+                            <p>Have been bringing my suits here for years for dry cleaning and minor repairs and always
+                                had excellent service - quality work, friendly staff and good value for money. Took a
+                                load of shirts in for the first time today- dropped off at 10am, just received them
+                                back, delivered to my house a few minutes ago, cleaned and ironed and, again, an
+                                excellent job. Highly recommend these guys.
+                            </p>
+                        </div>
+                        <div class="citem">
+                            <div class="client-img">
+                                <img src="/static/img/1.png" alt="testimonails">
+                            </div>
+                            <h5>Carol Bickerstaff</h5>
+                            <p>Had my daughters wedding dress cleaned and they did a fabulous job. Great service, very
+                                courteous and even sent a text message to let me know what time it would be ready. Will
+                                definitely use again.
+                            </p>
+                        </div>
+                        <div class="citem">
+                            <div class="client-img">
+                                <img src="/static/img/1.png" alt="testimonails">
+                            </div>
+                            <h5>Sandra Jordan</h5>
+                            <p>Great work for a very reasonable price. I travel very far to get all my tailoring done
+                                here. Professional and quick (couple of days) turnaround. They can do same day if
+                                required AT NO EXTRA COST if dropped early mornings which is helpful.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Testimonails ====
+        ======================================= -->
+
+    <br>
+    <br>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(event, token) {
+            if (!$("#i-recaptcha")[0].checkValidity()) {
+                $("#i-recaptcha")[0].reportValidity()
+                grecaptcha.reset()
+                return false;
+            } else {
+                document.getElementById("i-recaptcha").submit();
+            }
+        }
+    </script>
+    <!-- =====================================
+        ==== Start Contact -->
+    <section class="contact" data-scroll-index="5" id="contact">
+        <div class="container-fluid mt4">
+            <div class="row">
+                <div class="col-lg-6 map" style="width:100%">
+                    <iframe width="100%" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Quality%20Dry%20Cleaners%20%26alterations%2C%20100%20Commercial%20Road&t=&z=19&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+
+                </div>
+                <div class="col-lg-6 contact-form">
+                    <form class="form" method="post" action="contact.php" id='i-recaptcha'>
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+
+                                <div class="section-head col-sm-12">
+                                    <h4>
+                                        <span>Get </span><br>
+                                        In Touch
+                                    </h4>
+                                </div>
+                                <div class="col-md-12" id="smsg" style="display:none;">
+                                    <div class="alert alert-success" role="alert">
+                                        Thank you for contacting us.
+                                    </div>
+                                </div>
+                                <div class="col-md-12" id="emsg" style="display:none;">
+                                    <div class="alert alert-danger" role="alert">
+                                        Unable to send your request.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" placeholder="Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input id="form_subject" type="text" name="subject" required
+                                            placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" placeholder="Message" rows="4"
+                                            required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <button class="g-recaptcha sub_btn" required
+                                        data-sitekey="6LfPt_EUAAAAAND91aXiWvxrI6PBF3gTqdDK4_E7" type="submit"
+                                        data-callback="onSubmit">Submit</button>
+                                    <!-- <button class="sub_btn" type="submit" >Submit</button> -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Contact ====
+        ======================================= -->
+{% endblock %}
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-6 col-md-3">
+                    <h7>Opening Hours</h7>
+                    <ul class="footer-links">
+                        <li>Monday - Friday - 8.30am - 5.30pm</a></li>
+                        <li>Saturday - 9am - 5pm</a></li>
+                        <li>Sunday - Closed</a></li>
+                        <li>Bank Holidays - Closed</a></li>
+                        <li>Christmas: 24th – 1st</a></li>
+                        <li></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h7>Areas We Cover</h7>
+                    <ul class="footer-links">
+                        <li>SN1, SN2</a></li>
+                        <li>SN3, SN4</a></li>
+                        <li>SN5, SN6</a></li>
+                        <li>SN7, SN16</a></li>
+                        <li>SN26, SN25</a></li>
+                        <li>SN99, SN38</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h7>Address</h7>
+                    <ul class="footer-links">
+                        <li>Quality Dry Cleaners</a></li>
+                        <li>100 Commercial Road</a></li>
+                        <li>Swindon</a></li>
+                        <li>SN1 5PL</a></li>
+                        <li>Tel: 01793 617307</a></li>
+                        <li>24hrs: 07599 091 665</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h7>Quick Links</h7>
+                    <ul class="footer-links">
+
+                        <li><a href="areas-we-cover.html">Areas We Cover</a></li>
+                        <li><a href="partners.html">Partners</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                        <h7>Copyright</h7> &copy;<h8> 2021 All Rights Reserved by</h8>
+                        <a href="#">QDC</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/QualityDryCleanerz/"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/qdrycleaners"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a class="instagram" href="https://www.instagram.com/quality_dry_cleaners_swindon/?hl=en"><i
+                                    class="fa fa-instagram"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Footer ====
+      ======================================= -->
+
+    <!-- jQuery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js'></script> -->
+    <script src="/static/js/jquery-3.0.0.min.js"></script>
+    <script src="/static/js/jquery-migrate-3.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.13.0/moment.min.js"></script>
+
+    <!-- popper.min -->
+    <script src="/static/js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!-- scrollIt -->
+    <script src="/static/js/scrollIt.min.js"></script>
+
+    <!-- animated.headline -->
+    <script src="/static/js/animated.headline.js"></script>
+
+    <!-- jquery.waypoints.min -->
+    <script src="/static/js/jquery.waypoints.min.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="/static/js/jquery.counterup.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="/static/js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="/static/js/isotope.pkgd.min.js"></script>
+
+
+    <!-- Map -->
+    <script src="/static/js/map.js"></script>
+
+    <!-- validator js -->
+    <script src="/static/js/validator.js"></script>
+
+    <!-- custom scripts -->
+    <script src="/static/js/scripts.js"></script>
+
+    <!-- google map api -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7lXLHQgaGdP3IvMPi1ej0B9JHUbcqB0&callback=initMap">
+
+        </script>
+
+
+
+    <!-- add Script below with <> -->
+    <Script>
+        var now = new Date();
+        var weekday = new Array(7);
+        weekday[0] = "Sunday";
+        weekday[1] = "Monday";
+        weekday[2] = "Tuesday";
+        weekday[3] = "Wednesday";
+        weekday[4] = "Thursday";
+        weekday[5] = "Friday";
+        weekday[6] = "Saturday";
+
+
+        var checkTime = function () {
+
+            var weekdayOpenTime = "8.30am";
+            var weekdayCloseTime = "5.00pm";
+
+            var saturdayOpenTime = "9:00am";
+            var saturdayCloseTime = "5.00pm";
+
+            var today = new Date();
+            var time = moment(today).format("hh:mma");
+            var dayName = today.toLocaleString('en-us', { weekday: 'long' })
+            var weekday = today.getDay();
+
+
+            if (weekday == 0 || isHoliday()) {
+                timeDiv.innerHTML = 'It\'s ' + dayName + ' ' + time + ' - we\'re closed!';
+                timeDiv.className = 'closed';
+            }
+            else if (weekday == 6) {
+                var beginningTime = moment(saturdayOpenTime, 'h:mma');
+                var endTime = moment(saturdayCloseTime, 'h:mma');
+            }
+            else {
+                var beginningTime = moment(weekdayOpenTime, 'h:mma');
+                var endTime = moment(weekdayCloseTime, 'h:mma');
+            }
+            if (isOpeningHours(beginningTime, endTime)) {
+                timeDiv.innerHTML = 'it\'s ' + dayName + ' ' + time + ' - we\'re open!';
+                timeDiv.className = 'open';
+            }
+            else {
+                timeDiv.innerHTML = 'It\'s ' + dayName + ' ' + time + ' - we\'re closed!';
+                timeDiv.className = 'closed';
+            }
+
+        }
+
+        function isOpeningHours(beginningTime, endTime) {
+            var today = new Date();
+            var time = moment(today).format("hh:mma");
+            var currentTime = moment(time, 'h:mma');
+            return currentTime.isBetween(beginningTime, endTime, null, '[)');
+        }
+
+
+
+        function isHoliday() {
+            var today = new Date();
+            var todayDateString = today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+            var currentYear = today.getFullYear();
+
+            const monthNamesToNumber = {
+                "January": 0,
+                "February": 1,
+                "March": 2,
+                "April": 3,
+                "May": 4,
+                "June": 5,
+                "July": 6,
+                "August": 7,
+                "September": 8,
+                "October": 9,
+                "November": 10,
+                "December": 11
+            }
+
+            var returnVal = false;
+
+            var todayDate = moment(todayDateString).format('YYYY-MM-DD');
+            //format "MM-DD"
+            var holidays = [
+
+                [1, "January"],
+                [5, "April"],
+                [3, "May"],
+                [31, "May"],
+                [30, "August"],
+                [25, "December"],
+                [26, "December"],
+                [27, "December"],
+                [28, "December"],
+                [29, "December"],
+                [30, "December"],
+                [31, "December"]
+
+            ];
+            $.each(holidays, (index, item) => {
+
+                var date = monthNamesToNumber[item[1]] + "-" + item[0];
+                date = currentYear + "-" + date;
+                var holidayDate = moment(date).format('YYYY-MM-DD');
+                if (todayDate == holidayDate)
+                    returnVal = true;
+            })
+
+            return returnVal;
+
+        }
+
+        var currentDay = weekday[now.getDay()];
+        var currentDayID = "#" + currentDay; //gets todays weekday and turns it into id
+        $(currentDayID).toggleClass("today"); //hightlights today in the view hours modal popup
+
+        setInterval(checkTime, 1000);
+        checkTime();
+    </script>
+
+
+
+    <!--StartofTawk.toScript-->
+    <script
+        type="text/javascript"> var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date(); (function () { var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0]; s1.async = true; s1.src = 'https://embed.tawk.to/5ae9e3e45f7cdf4f0533cc97/1ccgqbksk'; s1.charset = 'UTF-8'; s1.setAttribute('crossorigin', '*'); s0.parentNode.insertBefore(s1, s0); })(); </script>
+    <!--End of Tawk.to Script-->
+    <!--End of Tawk.to Script-->
+
+
+
+
+    <!--GOOGLE BUSSINESS-->
+    <script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "@type": "DryCleaningOrLaundry",
+      "name": "Quality Dry Cleaners",
+      "url": "https://www.qualitydrycleanerz.co.uk/",
+      "logo": "https://www.qualitydrycleanerz.co.uk/img/logo-dark.png",
+      "image": "https://www.qualitydrycleanerz.co.uk/img/Main-image/shop.jpg",
+      "description": "Quality Dry Cleaners offers Laundry, Dry Cleaning & Alterations services in Swindon and surrounding areas. We offer Collection and Delivery Services.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Commercial Road",
+        "addressLocality": "Swindon",
+        "addressRegion": "Swindon ",
+        "postalCode": "SN1 5PL",
+        "addressCountry": "United Kingdom"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.558955",
+        "longitude": "1.785002"
+      },
+      "hasMap": "https://www.google.com/maps/place/Quality+Dry+Cleaners+%26+Alterations/@51.558955,-1.785002,13z/data=!4m5!3m4!1s0x0:0x3f771f18d1594164!8m2!3d51.558955!4d-1.785002?hl=en-US",
+      "openingHours": "Mo, Tu, We, Th, Fr 08:30-17:30",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+44 1793 617307",
+        "contactType": "general"
+      }
+    }
+    </script>
+    <!--/GOOGLE BUSSINESS-->
+
+    <!--META-->
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Quality Dry Cleaners",
+      "url": "https://www.qualitydrycleanerz.co.uk/",
+      "address": "100 Commercial Road, Swindon SN1 5PL, United Kingdom",
+      "sameAs": [
+        "https://www.facebook.com/QualityDryCleanerz/",
+        "https://www.instagram.com/quality_dry_cleaners_swindon",
+        "https://twitter.com/qdrycleaners",
+        "https://www.linkedin.com/in/quality-dry-cleaners-2170751a9/"
+      ]
+    }
+  </script>
+    <!-- /META -->
+
+    <!--WEBSITE-->
+    <script type='application/ld+json'>
+    {
+      "@context": "http://www.schema.org",
+      "@type": "WebSite",
+      "name": "Quality Dry Cleaners",
+      "alternateName": "Dry Cleaners Near Me",
+      "url": "https://www.qualitydrycleanerz.co.uk/"
+    }
+     </script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+    <script src="http://afarkas.github.io/webshim/js-webshim/minified/polyfiller.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js'></script>
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/ajax-bootstrap-select/1.3.8/js/ajax-bootstrap-select.min.js'></script>
+    <script type="text/javascript">
+        $(".selectpicker")
+            .selectpicker({
+                noneSelectedText: 'Enter Post code'
+            });
+        setTimeout(function () {
+            $(".bs-searchbox input").on('input propertychange', function (e) {
+                var query = $(this).val();
+                var queryLength = query.replace(" ", "").length;
+                if (queryLength < 6) {
+                    options = '<option></option>';
+                    document.getElementById('ajax-select').innerHTML = options;
+                    $(".selectpicker")
+                        .selectpicker("refresh");
+                    return;
+                }
+                if (!isWithinRange(query)) {
+                    options = '<option>We dont provide service in ' + query.toUpperCase() + '"</option>';
+                    document.getElementById('ajax-select').innerHTML = options;
+                    $(".selectpicker")
+                        .selectpicker("refresh");
+                    return;
+                }
+                options = '<option>Searching</option>';
+                document.getElementById('ajax-select').innerHTML = options;
+                $(".selectpicker").selectpicker("refresh");
+                $.getJSON("/static/postcodes/postcodes.php?postcode=" + query, function (result) {
+                    query = query.toUpperCase();
+                    var options = '';
+                    var x = 0;
+                    console.log(result.source)
+                    $.each(result.addresses, (k, v) => {
+                        var addressArray = v.filter(function (el) {
+                            return el != "";
+                        });
+                        var addressString = addressArray.join(", ")
+                        var optionValue = addressString + ', ' + query;
+                        v.push(query);
+                        options += '<option data-id="' + v + '" value="' + optionValue + '">' + optionValue + '</option>';
+                    })
+                    if (options == "") {
+                        options = '<option>We dont provide service in ' + query + '"</option>';
+                        document.getElementById('ajax-select').innerHTML = options;
+                    }
+                    else {
+                        document.getElementById('ajax-select').innerHTML = options;
+                    }
+                    updateValues(result.addresses[0]);
+                    $(".selectpicker").selectpicker("refresh");
+                }).error(function () {
+                    options = '<option>No results found!</option>';
+                    document.getElementById('ajax-select').innerHTML = options;
+                    $(".selectpicker").selectpicker("refresh");
+                });
+            });
+            $(".selectpicker").click(function () { $(".dropdown-menu").show() });
+            $(".dropdown-menu ul").click(function () { $(".dropdown-menu").hide() });
+        }, 500)
+        $('.selectpicker').on('change', function () {
+            var string = $("#ajax-select").find(':selected').data("id");
+            var array = string.split(",");
+            updateValues(array)
+        });
+
+        function updateValues(array) {
+            var address = "";
+            if (array[0])
+                address += array[0] + ", ";
+            if (array[1])
+                address += array[1] + ", ";
+            if (array[2])
+                address += array[2] + ", ";
+
+            address = address.slice(0, -2)
+
+            $("#firstLineAddress").val(address)
+            $("#city").val(array[3])
+            $("#postcode").val(array[5])
+        }
+
+        function chooseSelectpicker(index, selectpicker) {
+            $(selectpicker).val(index);
+            $(selectpicker).selectpicker('refresh');
+        }
+
+        function isWithinRange(postalCode) {
+            if (!postalCode)
+                return true;
+            // return false;
+            postalCode = postalCode.toUpperCase();
+            var postCodes =
+                ["SN1", "SN2", "SN3", "SN4", "SN5", "SN6", "SN7", "SN26", "SN25", "SN99", "SN38"];
+            for (var i = 0; i < postCodes.length; i++) {
+                if (postalCode.includes(postCodes[i]))
+                    return true;
+            }
+            return false;
+        }
+    </script>
+    <!--/WEBSITE-->
+</body>
+
+</html>
