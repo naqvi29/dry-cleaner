@@ -25,6 +25,18 @@ def contact_form():
     return "I am groot"
     return redirect("/?")
 
+@app.route("/booking")
+def booking():
+    return render_template("booking-index.html")
+
+@app.route("/booking-price")
+def booking_price():
+    return render_template("booking-price.html")
+
+@app.route("/book-now")
+def book_now():
+    return render_template("book-now.html")
+
     
 
 if __name__ == "__main__":

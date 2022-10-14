@@ -21,6 +21,32 @@
 
     <!-- Title  -->
     <title>{%block title %}{%endblock%}</title>
+    <!-- whatsapp popup -->
+    <a href="https://api.whatsapp.com/send?phone=+447599091665&text=Hey," class="float" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
+    
+    <style type="text/css">
+        .float{
+    position:fixed;
+    width:65px;
+    height:65px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+    margin-top:16px;
+}
+    </style>
+    <!-- whatsapp end  -->
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/static/img/favicon.ico" />
@@ -161,7 +187,7 @@
                         <a class="nav-link" href="#" data-scroll-nav="5">Contact US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="booking.php">Book Now</a>
+                        <a class="nav-link" href="/booking">Book Now</a>
                     </li>
                 </ul>
             </div>
@@ -1012,9 +1038,9 @@
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
                     <p class="copyright-text">
-                        <h7>Copyright</h7> &copy;<h8> 2021 All Rights Reserved by</h8>
-                        <a href="#">QDC</a>.
-                    </p>
+                        <h7>Copyright</h7> &copy;<h8> 2022 All Rights Reserved by</h8>
+                        <a href="#">Webtrica</a>.
+                      </p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
