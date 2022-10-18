@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="/static/booking/css/faqs.css">
+  <link rel="stylesheet" href="/static/booking/css/faqs.css">
 
   <link rel="stylesheet" href="/static/booking/css/bootstrap.min.css">
   <!-- Favicon -->
@@ -39,6 +39,8 @@
   <!-- Core Style Css -->
   <link rel="stylesheet" href="/static/booking/css/style.css" />
   <link rel="stylesheet" href="/static/booking/css/font-awesome.css" />
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     .caret {
       display: none !important
@@ -172,117 +174,123 @@
   <!-- End Navbar ====
      ======================================= -->
 
-     <header class="header-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text-header-1">
-              <h2>Get In Touch</h2>
-              <h1>For Booking
-              </h1>
-            </div>
-            <div class="text-2_header">
-              <p>Collection & Delivery Minimum order of £25.00 throughout <span>SN1 | SN2 & SN3 </span> , areas only.<span> SN4 |  SN5 | SN6 | SN7 | SN16 | SN25 | SN99 & SN38 </span> Minimum order £35.00 Please Call Us if you <br> require an Express Service (extra charge applicable).</p>
-            </div>
+  <header class="header-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-header-1">
+            <h2>Get In Touch</h2>
+            <h1>For Booking
+            </h1>
           </div>
-          <div class="col-sm-8">
+          <div class="text-2_header">
+            <p>Collection & Delivery Minimum order of £25.00 throughout <span>SN1 | SN2 & SN3 </span> , areas
+              only.<span> SN4 | SN5 | SN6 | SN7 | SN16 | SN25 | SN99 & SN38 </span> Minimum order £35.00 Please Call Us
+              if you <br> require an Express Service (extra charge applicable).</p>
+          </div>
+        </div>
+        <div class="col-sm-8">
             <div class="form-header">
               <h6>Pick UP</h6>
-<div class="row">
+              <div class="row">
 
-    <div class="col-sm-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" >
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Email</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" >
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Phone</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" >
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">First Line Address</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" >
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">City</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" >
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Postcode</label>
-          <input type="number" class="form-control" id="exampleFormControlInput1" >
-        </div>
-      </div>
-      <div class="col-sm-12">
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-      </div>
-
-</div>
-
-            </div>
-          
-            <div class="button-continue">
-                <a href="index.html" class="btn btn-primary"><< Back </a>
-                <a href="book-now.html" class="btn btn-primary">Confirm >></a>
-            </div>
-
-          </div>
-          <div class="col-sm-4">
-            
-            <div class="pick-and-drop">
-                <div class="heading">
-                  <h4>Booking Details</h4>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
                 </div>
-                <div class="edu-history-body">
-                  <div class="edu-history info">
-                    <i></i>
-                    <div class="detail-info">
-                      <h3>Pick Up</h3>
-                      <strong id="pickup-date-show">Tuesday, Oct 11 2022</strong>
-                      <p id="pickup-time-show">16.00 - 16:30</p>
-                      <p>Our driver will visit you to pick up the laundry bag.</p>
-                    </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Email</label>
+                    <input type="text" class="form-control" id="email">
                   </div>
-                  <div class="edu-history danger">
-                    <i></i>
-                    <div class="detail-info">
-                      <h3>Cleaning Process</h3>
-                      <p>Garments will be Inspected &amp; Cleaned.</p>
-                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Phone</label>
+                    <input type="text" class="form-control" id="phone">
                   </div>
-                  <div class="edu-history success">
-                    <i></i>
-                    <div class="detail-info">
-                      <h3>Delivery</h3>
-                      <strong id="delivery-date-show">Saturday, Oct 15 2022</strong>
-                      <p id="delivery-time-show">16.00 - 16:30</p>
-                      <p>Your garments will be delivered to you Pristine Condition.</p>
-                    </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">First Line Address</label>
+                    <input type="text" class="form-control" id="address" value="{{address}}">
                   </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">City</label>
+                    <input type="text" class="form-control" id="city" value="{{city}}">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Postcode</label>
+                    <input type="text" class="form-control" id="postcode" value="{{postcode}}">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="example" rows="3"></textarea>
+                  </div>
+                </div>
+                
+
+              </div>
+              
+              
+
+            </div>
+
+            <div class="button-continue">
+              <a href="index.html" class="btn btn-primary">
+                << Back </a>
+                  <a onclick="return submit()" class="btn btn-primary">Confirm >></a>
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+
+          <div class="pick-and-drop">
+            <div class="heading">
+              <h4>Booking Details</h4>
+            </div>
+            <div class="edu-history-body">
+              <div class="edu-history info">
+                <i></i>
+                <div class="detail-info">
+                  <h3>Pick Up</h3>
+                  <strong id="pickup-date-show">{{p_date}}</strong>
+                  <p id="pickup-time-show">{{p_time}}</p>
+                  <p>Our driver will visit you to pick up the laundry bag.</p>
                 </div>
               </div>
-                               
+              <div class="edu-history danger">
+                <i></i>
+                <div class="detail-info">
+                  <h3>Cleaning Process</h3>
+                  <p>Garments will be Inspected &amp; Cleaned.</p>
+                </div>
+              </div>
+              <div class="edu-history success">
+                <i></i>
+                <div class="detail-info">
+                  <h3>Delivery</h3>
+                  <strong id="delivery-date-show">{{d_date}}</strong>
+                  <p id="delivery-time-show">{{d_time}}</p>
+                  <p>Your garments will be delivered to you Pristine Condition.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          
+
         </div>
+
       </div>
-     </header>
+    </div>
+  </header>
 
 
   <!-- Site footer -->
@@ -299,7 +307,7 @@
             <li>SN1 5PL</a></li>
             <li>Tel: 01793 617307</a></li>
             <li>24hrs: 07599 091 665</a></li>
-        </ul>
+          </ul>
         </div>
 
         <div class="col-xs-6 col-md-3">
@@ -598,11 +606,62 @@
     }
   </script>
   <!--/WEBSITE-->
-<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 
   <script src="/static/booking/js/jquery-3.2.1.slim.min.js"></script>
   <script src="/static/booking/js/popper.min.js"></script>
   <script src="/static/booking/js/bootstrap.min.js"></script>
+
+
+  <script>
+    function submit(){
+      console.log("submitted!");
+      name = document.getElementById("name").value;
+      email = document.getElementById("email").value;
+      phone = document.getElementById("phone").value;
+      address = document.getElementById("address").value;
+      city = document.getElementById("city").value;
+      postcode = document.getElementById("postcode").value;
+      example = document.getElementById("example").value;
+      var p_date = '{{p_date}}'
+      var p_time = '{{p_time}}'
+      var d_date = '{{d_date}}'
+      var d_time = '{{d_time}}'
+      var products = {{products|safe}}
+      products = JSON.stringify(products);
+      console.log("pr: ",products)
+      var total_amount = '{{total_amount}}'
+      $.ajax(
+            {
+              type : 'POST',
+              url : "/book-now",
+              data    :  { "name" : name,"email":email,"phone":phone,"address":address,"city":city,"postcode":postcode,"example":example,"p_date":p_date,"p_time":p_time,"d_date":d_date,"d_time":d_time,"products":products,"total_amount":total_amount } ,
+              success : function(response){
+                console.log(response)
+                if (response=="True"){
+                  Swal.fire(
+                    'Success!',
+                    'Booking Confirmed!',
+                    'success'
+                  )
+                  
+                }else{
+                  Swal.fire(
+                    'Failed!',
+                    'Something went wrong!',
+                    'error'
+                  )
+
+                }
+              },
+              error: function (response) {
+                  console.log(response)
+              }
+            });
+
+    }
+  </script>
 </body>
+
 
 </html>

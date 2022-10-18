@@ -1,6 +1,9 @@
 {% extends 'layout.html' %}
 {% block title%}Quality Dry Cleaners{%endblock%}
+
 {%block content%}
+<script src="https://cdn.getaddress.io/scripts/getaddress-autocomplete-1.1.3.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 <!-- =====================================
@@ -44,7 +47,7 @@
 
   </div>
 
-  <div class="arrow">
+  <div class="arrow" id="bookdiv">
     <a href="#" data-scroll-nav="1">
       <i class="fas fa-chevron-down"></i>
     </a>
@@ -53,33 +56,41 @@
 
 <!-- End Header ====
       ======================================= -->
-
-<div class="row mt-4">
-  <div class="col-md-12 text-center">
-    <h5>ARRANGE A Collection Now!</h5>
+  <div class="row mt-4">
+    <div class="col-md-12 text-center">
+      <h5>ARRANGE A Collection Now!</h5>
+    </div>
   </div>
-</div>
-<div class="row mt-1">
-  <div class="col-md-4"></div>
-  <div class="col-md-6">
-    <form class="input-group mb-3 post-code-form" action="booking.php" method="POST">
-      <div class="auto-complete-address-boostrap-only">
-        <select id="ajax-select" required class="selectpicker with-ajax" data-live-search="true"></select>
-      </div>
-      <div class="input-group-append">
-        <button style="height: 35px;" class="btn btn-outline-secondary post-code-btn butn butn-bg" type="submit">Book
-          Now</button>
-      </div>
-      <div class="hidden">
-        <input type="hidden" name="firstLineAddress" id="firstLineAddress">
-        <input type="hidden" name="city" id="city">
-        <input type="hidden" name="postcode" id="postcode">
-      </div>
+  <div class="row mt-1">
+    <!-- <div class="col-md-3">    
+    </div> -->
+    <div class="col-md-6 mx-auto" >
+      <form class="input-group mb-3 mx-auto" action="#" method="POST">
+        <!-- <div class="auto-complete-address-boostrap-only">
+          <select id="ajax-select" required class="selectpicker with-ajax" data-live-search="true"></select>
+        </div> -->
+        <div class="mx-auto" style="width: 80%;">
+          <input type="text"  class="form-control" style="width: 100%;" name="postcode" id="formatted_address_0" placeholder="ENTER YOUR POSTCODE">
+        </div>
+        <div class="input-group-append mx-auto">
+          <button onclick="return booknow()" style="height: 35px;" class="btn btn-outline-secondary post-code-btn butn butn-bg" type="button">Book
+            Now</button>
+        </div>
+        <div class="hidden">
+          <input type="hidden" name="firstLineAddress" id="formatted_address_0">
+          <input type="hidden" name="firstLineAddress" id="formatted_address_1">
+          <input type="hidden" name="firstLineAddress" id="formatted_address_2">
 
-    </form>
+          <input type="hidden" name="city" id="town_or_city">
+          <input type="hidden" name="postcode" id="postcode">
+
+          
+          
+        </div>
+      </form>
+    </div>
+    <!-- <div class="col-md-3"></div> -->
   </div>
-  <div class="col-md-3"></div>
-</div>
 
 
 
@@ -820,5 +831,85 @@ else{
 }
 
 }
+</script>
+<script>
+    getAddress.autocomplete("formatted_address_0",'8_nr7S0fJ0uKKNyjLmjveg25832');
+    document.addEventListener("getaddress-autocomplete-address-selected", function(e){
+        console.log(e.address);
+        console.log(e.address.postcode);
+        
+    })
+  
+</script>
+<script>
+  function booknow(){
+    let postcode = document.getElementById("postcode").value;
+    let address0 = document.getElementById("formatted_address_0").value
+    let address1 = document.getElementById("formatted_address_1").value
+    let address2 = document.getElementById("formatted_address_2").value
+    let city = document.getElementById("town_or_city").value
+    console.log("hey");  
+    console.log(address0);    
+    console.log(address1);    
+    console.log(address2);    
+    post=null
+    if (!postcode){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Enter Postcode First!'
+      })
+    }
+    else if (postcode.includes("SN1")) {
+      post="SN1"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN2")){
+      post="SN2"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN3")){
+      post="SN3"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN4")){
+      post="SN4"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN5")){
+      post="SN5"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN6")){
+      post="SN6"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN7")){
+      post="SN7"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN16")){
+      post="SN16"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN25")){
+      post="SN25"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN99")){
+      post="SN99"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else if(postcode.includes("SN38")){
+      post="SN38"
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }else{
+      post=postcode
+      text = "Minimum Order is £25.00 for this Post Code Area"
+    }
+    Swal.fire({
+  title: post,
+  text: text,
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Next!'
+}).then((result) => {
+  if (result.isConfirmed) {
+    window.location.href = "/booking?postcode="+postcode+"&city="+city+"&address="+address0+" "+address1+""+address2;
+  }
+})
+  }
 </script>
 {% endblock %}

@@ -1,644 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout2.html' %}
+{% block title%}Quality Dry Cleaners : Best Dry Cleaners Services Near Me{%
+endblock %}
+{% block content %}
 
-<head>
-
-  <!-- Metas -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta property="og:title" content="Quality Dry Cleaners : Best Dry Cleaners Services Near Me" />
-  <meta property="og:type" content="Dry Cleaners" />
-  <meta property="og:description"
-    content="Looking For A Best Dry Cleaners Near You? We Pride Ourselves On Our Commitment To Provide A Professional And Speedy Dry Cleaning Service At All Times." />
-  <meta property="og:image" content="https://www.qualitydrycleanerz.co.uk/img/Main-image/shop.jpg" />
-  <meta name="keywords" content="dry cleaning, same day dry clean, swindon, cloths wash, launderate, suits clean" />
-  <meta name="description"
-    content="Looking For A Best Dry Cleaners Near You? We Pride Ourselves On Our Commitment To Provide A Professional And Speedy Dry Cleaning Service At All Times." />
-  <meta name="author" content="Faran" />
-
-  <!-- Title  -->
-  <title>Quality Dry Cleaners : Best Dry Cleaners Services Near Me</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="/static/booking/css/faqs.css">
-
-  <link rel="stylesheet" href="/static/booking/css/bootstrap.min.css">
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/static/booking/img/favicon.ico" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
-
-  <!-- Plugins -->
-  <link rel="stylesheet" href="/static/booking/css/plugins.css" />
-
-  <!-- Core Style Css -->
-  <link rel="stylesheet" href="/static/booking/css/style.css" />
-  <link rel="stylesheet" href="/static/booking/css/font-awesome.css" />
-  <style>
-    .caret {
-      display: none !important
-    }
-
-    .navbar-toggler {
-      padding: .90rem 1rem;
-      font-size: 1.25rem;
-    }
-
-    .modal-header .close {
-      width: 50px;
-    }
-
-    .modal-footer button.btn.btn-default {
-      padding: 11px 19px;
-    }
-
-    @media all and (max-width: 520px) {
-      .footer-links a {
-        padding-top: 17px;
-        padding-bottom: 16px;
-        line-height: 1em;
-      }
-    }
-
-    .bootstrap-select {
-      width: 100% !important;
-    }
-
-    @media only screen and (min-width: 968px) {
-      .auto-complete-address-boostrap-only {
-        width: 27rem
-      }
-    }
-
-    @media only screen and (max-width: 967px) {
-      .auto-complete-address-boostrap-only {
-        width: 15rem
-      }
-    }
-
-    .sub_btn:after {
-      display: none;
-    }
-  </style>
-
-
-  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css'> -->
-  <link rel="stylesheet" href="/static/booking/css/boostrap-only.css" />
-  <link rel='stylesheet' href='css/bootstrap-select.min.css'>
-  <link rel='stylesheet' href='css/ajax-bootstrap-select.min.css'>
-</head>
-
-<body>
-  <script>
-    var url = window.location.href;
-    if (url == "https://www.qualitydrycleanerz.co.uk/index.html#success") {
-      window.location = '#contact';
-      setInterval(function () { $('#smsg').show(); }, 2000);
-    } else if (url == "https://www.qualitydrycleanerz.co.uk/index.html#error") {
-      window.location = '#contact';
-      setInterval(function () { $('#emsg').show(); }, 2000);
-    }
-  </script>
-  <!-- =====================================
-     ==== Start Loading -->
-
-  <div class="loading">
-    <div class="text-center middle">
-      <div class="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- End Loading ====
-     ======================================= -->
-
-
-  <!-- =====================================
-     ==== Start Navbar -->
-
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-
-      <!-- Logo -->
-      <a class="logo" href="#">
-        <img src="/static/booking/img/logo-light.png" alt="logo">
-      </a>
-      <div id="main">
-        <div id="timeDiv"></div>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon-bar"><i class="fas fa-bars"></i></span>
-      </button>
-
-      <!-- navbar links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="0">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="1">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="2">Special Offers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="3">Why Choose Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="4">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-scroll-nav="5">Contact US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="booking.php">Book Now</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- End Navbar ====
-     ======================================= -->
-
-     <header class="header-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text-header-1">
-              <h2>Choose Collection</h2>
-              <h1>Date & Time
-              </h1>
-              <!-- <h2>Get In Touch</h2>
+<header class="header-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text-header-1">
+          <h2>Choose Collection</h2>
+          <h1>Date & Time
+          </h1>
+          <!-- <h2>Get In Touch</h2>
               <h1>For Booking
               </h1> -->
+        </div>
+        <div class="text-2_header">
+          <!-- <p>Collection & Delivery Minimum order of £25.00 throughout <span>SN1 | SN2 & SN3 </span> , areas only.<span> SN4 |  SN5 | SN6 | SN7 | SN16 | SN25 | SN99 & SN38 </span> Minimum order £35.00 Please Call Us if you <br> require an Express Service (extra charge applicable).</p> -->
+          <p>
+            {% if pc %}
+            <span> {{pc}} </span>
+            {% endif %}
+            Minimum Order is £25.00. Please Call Us if you require an Express
+            Service (extra charge applicable). </p>
+
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-header">
+          <h6>Pick UP</h6>
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Date</label>
+                <input type="date" class="form-control"
+                  id="p_date" placeholder="name@example.com">
+              </div>
             </div>
-            <div class="text-2_header">
-              <p>Collection & Delivery Minimum order of £25.00 throughout <span>SN1 | SN2 & SN3 </span> , areas only.<span> SN4 |  SN5 | SN6 | SN7 | SN16 | SN25 | SN99 & SN38 </span> Minimum order £35.00 Please Call Us if you <br> require an Express Service (extra charge applicable).</p>
-            </div>
-          </div>
-          <div class="col-sm-8">
-            <div class="form-header">
-              <h6>Pick UP</h6>
-<div class="row">
-
-  <div class="col-sm-6">
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Date</label>
-      <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Time</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>17.00 - 17.30</option>
-     
-      </select>
-    </div>
-  </div>
-
-</div>
-
-            </div>
-            <div class="form-header">
-              <h6>Delivery</h6>
-<div class="row">
-
-  <div class="col-sm-6">
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Date</label>
-      <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-    </div>
-  </div>
-  
-  <div class="col-sm-6">
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Time</label>
-      <select class="form-control" id="exampleFormControlSelect1">
-        <option>17.00 - 17.30</option>
-     
-      </select>
-    </div>
-  </div>
-
-</div>
-
-            </div>
-            <div class="button-continue">
-              <a href="/booking-price" class="btn btn-primary">Continue >></a>
-
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Time</label>
+                <select class="form-control" id="p_time">
+                  <option>2pm - 3pm</option>
+                  <option>3pm - 4pm</option>
+                  <option>4pm - 5pm</option>
+                  <option>5pm - 6pm</option>
+                  <option>6pm - 7pm</option>
+                </select>
+              </div>
             </div>
 
           </div>
-          <div class="col-sm-4">
-            
-                                  <!-- ***** FAQ Start ***** -->
-              
-                                   
-                                      <div class="faq" id="accordion">
-                                          <div class="card">
-                                              <div class="card-header" id="faqHeading-1">
-                                                  <div class="mb-0">
-                                                      <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
-                                                          <span class="badge">1</span>How it works?
-                                                      </h5>
-                                                  </div>
-                                              </div>
-                                              <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
-                                                  <div class="card-body">
-                                                      <p>It's simple! Just put everything in a bag. No need to count clothes. We will do all of that at check-in at our facility. </p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="card">
-                                              <div class="card-header" id="faqHeading-2">
-                                                  <div class="mb-0">
-                                                      <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
-                                                          <span class="badge">2</span> View Price List
-                                                      </h5>
-                                                  </div>
-                                              </div>
-                                              <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
-                                                  <div class="card-body">
-                                                      <p>Click Here to see our detailed price list.</p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="card">
-                                              <div class="card-header" id="faqHeading-3">
-                                                  <div class="mb-0">
-                                                      <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
-                                                          <span class="badge">3</span>Why us?
-                                                      </h5>
-                                                  </div>
-                                              </div>
-                                              <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
-                                                  <div class="card-body">
-                                                    <ul>
-                                                      <li>Quality Guaranteed
-                                                       </li>
-                                                      <li>                                                        Guaranteed Smile
-                                                      </li>
-                                                      <li>                                                        Convenience
-                                                      </li>
-                                                      <li>                                                        Loyalty Schemes
-                                                      </li>
-                                                      <li>                                                        Affordable Prices
-                                                      </li>
-                                                      <li>                                                        Express Service
-                                                      </li>
-                                                      <li>                                                        Ready to Wear
-                                                      </li>
-                                                      <li>                                                        Collection & Delivery
-                                                      </li>
-                                                      <li> Award Winning Customer Service</li>
-                                                
-                                                    </ul>
-                                                     
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          
-                                      </div>
-                               
+
+        </div>
+        <div class="form-header">
+          <h6>Delivery</h6>
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Date</label>
+                <input type="date" class="form-control"
+                  id="d_date" placeholder="name@example.com">
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Time</label>
+                <select class="form-control" id="d_time">
+                  <option>4pm - 5pm</option>
+                  <option>5pm - 6pm</option>
+                  <option>6pm - 7pm</option>
+                  <option>7pm - 8pm</option>
+                </select>
+              </div>
+            </div>
+
           </div>
-          
+
         </div>
-      </div>
-     </header>
-
-
-  <!-- Site footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-xs-6 col-md-3">
-          <h7>Opening Hours</h7>
-          
-          <ul class="footer-links">
-            <li>Monday - Friday - 8.30am - 5.30pm</a></li>
-            <li>Saturday - 9am - 5pm</a></li>
-            <li>Sunday - Closed</a></li>
-            <li>Bank Holidays - Closed</a></li>
-            <li>Christmas: 24th – 1st</a></li>
-            <li></a></li>
-        </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h7>Areas We Cover</h7>
-          <ul class="footer-links">
-            <li>SN1, SN2</a></li>
-            <li>SN3, SN4</a></li>
-            <li>SN5, </a></li>
-            <li>SN26, SN25</a></li>
-            <li>SN99, SN38</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h7>Address</h7>
-          <ul class="footer-links">
-            <li>Quality Dry Cleaners</a></li>
-            <li>100 Commercial Road</a></li>
-            <li>Swindon</a></li>
-            <li>SN1 5PL</a></li>
-            <li>Tel: 01793 617307</a></li>
-            <li>24hrs: 07599 091 665</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h7>Quick Links</h7>
-          <ul class="footer-links">
-
-            <li><a href="areas-we-cover.html">Areas We Cover</a></li>
-            <li><a href="partners.html">Partners</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-
-
-
-          </ul>
+        <div class="button-continue">
+          <!-- <a href="/booking-price" class="btn btn-primary">Continue >></a> -->
+          <button onclick="return next()" class="btn btn-primary">Continue >></button>
         </div>
 
       </div>
-      <hr>
+      <div class="col-sm-4">
+
+        <!-- ***** FAQ Start ***** -->
+
+
+        <div class="faq" id="accordion">
+          <div class="card">
+            <div class="card-header" id="faqHeading-1">
+              <div class="mb-0">
+                <h5 class="faq-title" data-toggle="collapse"
+                  data-target="#faqCollapse-1" data-aria-expanded="true"
+                  data-aria-controls="faqCollapse-1">
+                  <span class="badge">1</span>How it works?
+                </h5>
+              </div>
+            </div>
+            <div id="faqCollapse-1" class="collapse"
+              aria-labelledby="faqHeading-1" data-parent="#accordion">
+              <div class="card-body">
+                <p>It's simple! Just put everything in a bag. No need to count
+                  clothes. We will do all of that at check-in at our facility.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faqHeading-2">
+              <div class="mb-0">
+                <h5 class="faq-title" data-toggle="collapse"
+                  data-target="#faqCollapse-2" data-aria-expanded="false"
+                  data-aria-controls="faqCollapse-2">
+                  <span class="badge">2</span> View Price List
+                </h5>
+              </div>
+            </div>
+            <div id="faqCollapse-2" class="collapse"
+              aria-labelledby="faqHeading-2" data-parent="#accordion">
+              <div class="card-body">
+                <p>Click Here to see our detailed price list.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="faqHeading-3">
+              <div class="mb-0">
+                <h5 class="faq-title" data-toggle="collapse"
+                  data-target="#faqCollapse-3" data-aria-expanded="false"
+                  data-aria-controls="faqCollapse-3">
+                  <span class="badge">3</span>Why us?
+                </h5>
+              </div>
+            </div>
+            <div id="faqCollapse-3" class="collapse"
+              aria-labelledby="faqHeading-3" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Quality Guaranteed
+                  </li>
+                  <li> Guaranteed Smile
+                  </li>
+                  <li> Convenience
+                  </li>
+                  <li> Loyalty Schemes
+                  </li>
+                  <li> Affordable Prices
+                  </li>
+                  <li> Express Service
+                  </li>
+                  <li> Ready to Wear
+                  </li>
+                  <li> Collection & Delivery
+                  </li>
+                  <li> Award Winning Customer Service</li>
+
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">
-            <h7>Copyright</h7> &copy;<h8> 2022 All Rights Reserved by</h8>
-            <a href="#">Webtrica</a>.
-          </p>
-        </div>
+  </div>
+</header>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a class="facebook" href="https://www.facebook.com/QualityDryCleanerz/"><i
-                  class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="https://twitter.com/qdrycleaners"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="instagram" href="https://www.instagram.com/quality_dry_cleaners_swindon/?hl=en"><i
-                  class="fa fa-instagram"></i></a></li>
+<script>
+  var today = new Date();
+  var del_date = new Date(today);
+  del_date.setDate(today.getDate()+4);
+  del_date.toLocaleDateString();
+  console.log("tomorrow: ",del_date);
+  document.getElementById('p_date').valueAsDate = today;
+  document.getElementById('d_date').valueAsDate = del_date;
 
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-
-
-  </footer>
-
-  <!-- End Footer ====
-     ======================================= -->
-
-  <!-- jQuery -->
-  <script src='js/jquery.min.js'></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js'></script> -->
-  <script src="/static/booking/js/jquery-3.0.0.min.js"></script>
-  <script src="/static/booking/js/jquery-migrate-3.0.0.min.js"></script>
-  <script src="/static/booking/js/moment.min.js"></script>
-
-  <!-- popper.min -->
-  <script src="/static/booking/js/popper.min.js"></script>
-
-  <!-- bootstrap -->
-  <script src="/static/booking/js/bootstrap.min.js"></script>
-
-  <!-- scrollIt -->
-  <script src="/static/booking/js/scrollIt.min.js"></script>
-
-  <!-- animated.headline -->
-  <script src="/static/booking/js/animated.headline.js"></script>
-
-  <!-- jquery.waypoints.min -->
-  <script src="/static/booking/js/jquery.waypoints.min.js"></script>
-
-  <!-- jquery.counterup.min -->
-  <script src="/static/booking/js/jquery.counterup.min.js"></script>
-
-  <!-- owl carousel -->
-  <script src="/static/booking/js/owl.carousel.min.js"></script>
-
-  <!-- jquery.magnific-popup js -->
-  <script src="/static/booking/js/jquery.magnific-popup.min.js"></script>
-
-  <!-- stellar js -->
-  <script src="/static/booking/js/jquery.stellar.min.js"></script>
-
-  <!-- isotope.pkgd.min js -->
-  <script src="/static/booking/js/isotope.pkgd.min.js"></script>
-
-
-  <!-- Map -->
-  <script src="/static/booking/js/map.js"></script>
-
-  <!-- validator js -->
-  <script src="/static/booking/js/validator.js"></script>
-
-  <!-- custom scripts -->
-  <script src="/static/booking/js/scripts.js"></script>
-
-  <!-- google map api -->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7lXLHQgaGdP3IvMPi1ej0B9JHUbcqB0&callback=initMap">
-
-    </script>
-
-
-
-  <!--GOOGLE BUSSINESS-->
-  <script type='application/ld+json'>
-   {
-     "@context": "http://www.schema.org",
-     "@type": "DryCleaningOrLaundry",
-     "name": "Quality Dry Cleaners",
-     "url": "https://www.qualitydrycleanerz.co.uk/",
-     "logo": "https://www.qualitydrycleanerz.co.uk/img/logo-dark.png",
-     "image": "https://www.qualitydrycleanerz.co.uk/img/Main-image/shop.jpg",
-     "description": "Quality Dry Cleaners offers Laundry, Dry Cleaning & Alterations services in Swindon and surrounding areas. We offer Collection and Delivery Services.",
-     "address": {
-       "@type": "PostalAddress",
-       "streetAddress": "100 Commercial Road",
-       "addressLocality": "Swindon",
-       "addressRegion": "Swindon ",
-       "postalCode": "SN1 5PL",
-       "addressCountry": "United Kingdom"
-     },
-     "geo": {
-       "@type": "GeoCoordinates",
-       "latitude": "51.558955",
-       "longitude": "1.785002"
-     },
-     "hasMap": "https://www.google.com/maps/place/Quality+Dry+Cleaners+%26+Alterations/@51.558955,-1.785002,13z/data=!4m5!3m4!1s0x0:0x3f771f18d1594164!8m2!3d51.558955!4d-1.785002?hl=en-US",
-     "openingHours": "Mo, Tu, We, Th, Fr 08:30-17:30",
-     "contactPoint": {
-       "@type": "ContactPoint",
-       "telephone": "+44 1793 617307",
-       "contactType": "general"
-     }
-   }
-   </script>
-  <!--/GOOGLE BUSSINESS-->
-
-  <!--META-->
-  <script type="application/ld+json">
-   {
-     "@context": "http://schema.org",
-     "@type": "Organization",
-     "name": "Quality Dry Cleaners",
-     "url": "https://www.qualitydrycleanerz.co.uk/",
-     "address": "100 Commercial Road, Swindon SN1 5PL, United Kingdom",
-     "sameAs": [
-       "https://www.facebook.com/QualityDryCleanerz/",
-       "https://www.instagram.com/quality_dry_cleaners_swindon",
-       "https://twitter.com/qdrycleaners",
-       "https://www.linkedin.com/in/quality-dry-cleaners-2170751a9/"
-     ]
-   }
- </script>
-  <!-- /META -->
-
-  <!--WEBSITE-->
-  <script type='application/ld+json'>
-   {
-     "@context": "http://www.schema.org",
-     "@type": "WebSite",
-     "name": "Quality Dry Cleaners",
-     "alternateName": "Dry Cleaners Near Me",
-     "url": "https://www.qualitydrycleanerz.co.uk/"
-   }
-    </script>
-  <script type="text/javascript" src="/static/booking/js/mapsjs-core.js"></script>
-  <script type="text/javascript" src="/static/booking/js/mapsjs-service.js"></script>
-  <script type="text/javascript" src="/static/booking/js/mapsjs-ui.js"></script>
-  <script type="text/javascript" src="/static/booking/js/mapsjs-mapevents.js"></script>
-  <script src="/static/booking/js/polyfiller.js"></script>
-
-  <script src='js/bootstrap-select.min.js'></script>
-  <script src='js/ajax-bootstrap-select.min.js'></script>
-  <script type="text/javascript">
-    $(".selectpicker")
-      .selectpicker({
-        noneSelectedText: 'Enter Post code'
-      });
-    setTimeout(function () {
-      $(".bs-searchbox input").on('input propertychange', function (e) {
-        var query = $(this).val();
-        var queryLength = query.replace(" ", "").length;
-        if (queryLength < 6) {
-          options = '<option></option>';
-          document.getElementById('ajax-select').innerHTML = options;
-          $(".selectpicker")
-            .selectpicker("refresh");
-          return;
-        }
-        if (!isWithinRange(query)) {
-          options = '<option>We dont provide service in ' + query.toUpperCase() + '"</option>';
-          document.getElementById('ajax-select').innerHTML = options;
-          $(".selectpicker")
-            .selectpicker("refresh");
-          return;
-        }
-        options = '<option>Searching</option>';
-        document.getElementById('ajax-select').innerHTML = options;
-        $(".selectpicker").selectpicker("refresh");
-        $.getJSON("postcodes/postcodes.php?postcode=" + query, function (result) {
-          query = query.toUpperCase();
-          var options = '';
-          var x = 0;
-          console.log(result.source)
-          $.each(result.addresses, (k, v) => {
-            var addressArray = v.filter(function (el) {
-              return el != "";
-            });
-            var addressString = addressArray.join(", ")
-            var optionValue = addressString + ', ' + query;
-            v.push(query);
-            options += '<option data-id="' + v + '" value="' + optionValue + '">' + optionValue + '</option>';
-          })
-          if (options == "") {
-            options = '<option>We dont provide service in ' + query + '"</option>';
-            document.getElementById('ajax-select').innerHTML = options;
-          }
-          else {
-            document.getElementById('ajax-select').innerHTML = options;
-          }
-          updateValues(result.addresses[0]);
-          $(".selectpicker").selectpicker("refresh");
-        }).error(function () {
-          options = '<option>No results found!</option>';
-          document.getElementById('ajax-select').innerHTML = options;
-          $(".selectpicker").selectpicker("refresh");
-        });
-      });
-      $(".selectpicker").click(function () { $(".dropdown-menu").show() });
-      $(".dropdown-menu ul").click(function () { $(".dropdown-menu").hide() });
-    }, 500)
-    $('.selectpicker').on('change', function () {
-      var string = $("#ajax-select").find(':selected').data("id");
-      var array = string.split(",");
-      updateValues(array)
-    });
-
-    function updateValues(array) {
-      var address = "";
-      if (array[0])
-        address += array[0] + ", ";
-      if (array[1])
-        address += array[1] + ", ";
-      if (array[2])
-        address += array[2] + ", ";
-
-      address = address.slice(0, -2)
-
-      $("#firstLineAddress").val(address)
-      $("#city").val(array[3])
-      $("#postcode").val(array[5])
+  function next(){
+    var postcode ='{{pc}}';
+    var city = '{{city}}';
+    var address = '{{address}}';
+    p_date = document.getElementById("p_date").value;
+    p_time = document.getElementById("p_time").value;
+    d_date = document.getElementById("d_date").value;
+    d_time = document.getElementById("d_time").value;
+    console.log(p_date)
+    console.log(p_time)
+    console.log(d_date)
+    console.log(d_time)
+    if(p_date && p_time && d_date && d_time && postcode){
+    window.location.href = "/booking-price?postcode="+postcode+"&p_date="+p_date+"&p_time="+p_time+"&d_date="+d_date+"&d_time="+d_time+"&city="+city+"&address="+address;
     }
 
-    function chooseSelectpicker(index, selectpicker) {
-      $(selectpicker).val(index);
-      $(selectpicker).selectpicker('refresh');
-    }
 
-    function isWithinRange(postalCode) {
-      if (!postalCode)
-        return true;
-      // return false;
-      postalCode = postalCode.toUpperCase();
-      var postCodes =
-        ["SN1", "SN2", "SN3", "SN4", "SN5", "SN6", "SN7", "SN26", "SN25", "SN99", "SN38"];
-      for (var i = 0; i < postCodes.length; i++) {
-        if (postalCode.includes(postCodes[i]))
-          return true;
-      }
-      return false;
-    }
-  </script>
-  <!--/WEBSITE-->
-<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
-
-  <script src="/static/booking/js/jquery-3.2.1.slim.min.js"></script>
-  <script src="/static/booking/js/popper.min.js"></script>
-  <script src="/static/booking/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+  }
+</script>
+{% endblock %}

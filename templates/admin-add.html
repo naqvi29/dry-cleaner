@@ -1,0 +1,78 @@
+{% extends 'admin-layout.html' %}
+{% block title %}Add {{type|capitalize}}{% endblock %}
+{% block head %}
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+{% block content %}
+  <div class="content-wrapper">
+    <div class="page-header">
+      <h3 class="page-title">
+        <span class="page-title-icon bg-gradient-primary text-white me-2">
+          <i class="mdi mdi-home"></i>
+        </span> Add {{type|capitalize}}
+      </h3>
+    </div>
+    <div class="col-md-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body">
+          <!-- <h4 class="card-title">Default form</h4>
+          <p class="card-description"> Basic form layout </p> -->
+          <form action="/admin-add/{{type}}" method="post" class="forms-sample">
+            <div class="form-group">
+              <label for="exampleInputUsername1">Name</label>
+              <input type="text" name="name" class="form-control" id="exampleInputUsername1" placeholder="Name">
+            </div>
+            {% if type=="pricing" %}
+            
+            <div class="form-group">
+              <label for="exampleInputUsername1">Price</label>
+              <input type="number" step="any" name="price" class="form-control" id="exampleInputUsername1" placeholder="Price">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputUsername1">Select Category</label>
+              <select class="form-control" name="category_id" required>
+                <option value="" selected>Select category</option>
+                {% for i in categories %}
+                <option value="{{i._id}}">{{i.name}}</option>
+                {% endfor %}
+              </select>
+            </div>
+            {% endif %}
+            <button type="submit" class="btn btn-gradient-primary me-2">Add</button>
+            <button class="btn btn-light">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {% if type=="category" %}
+    <a href="/admin-cat"><button type="button" class="btn btn-gradient-dark btn-rounded btn-fw">View Categories</button></a>
+    {% elif type =="pricing" %}
+    <a href="/admin-pricing"><button type="button" class="btn btn-gradient-dark btn-rounded btn-fw">View Pricing</button></a>
+    {% endif %}
+
+  </div>
+  
+{% endblock %}
+{% block scripts %}
+  {% if msg %}
+    {% if error %}
+    <script>
+      Swal.fire(
+      '{{msg}}',
+      '',
+      'error'
+    )
+    </script>
+    {%else%}
+    <script>
+      Swal.fire(
+      '{{msg}}',
+      '',
+      'success'
+    )
+    </script>
+
+    {% endif %}
+  {% endif %}
+
+{% endblock %}

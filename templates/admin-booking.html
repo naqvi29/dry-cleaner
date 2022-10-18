@@ -1,0 +1,100 @@
+{% extends 'admin-layout.html' %}
+{% block title %}Bookings{% endblock %}
+{% block head %}
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{% endblock %}
+{% block content %}
+  <div class="content-wrapper">
+    <div class="page-header">
+      <h3 class="page-title">
+        <span class="page-title-icon bg-gradient-primary text-white me-2">
+          <i class="mdi mdi-home"></i>
+        </span> Bookings
+      </h3>
+    </div>
+    <div class="col-lg-12 grid-margin stretch-card">
+      <div class="card">
+        <div class="card-body table-responsive">
+          <!-- <h4 class="card-title">Hoverable Table</h4>
+          <p class="card-description"> Add class <code>.table-hover</code> -->
+          </p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>Postcode</th>
+                <th>Pickup Date</th>
+                <th>Pickup Time</th>
+                <th>Delivery Date</th>
+                <th>Delivery Time</th>
+                <th>Products</th>
+                <th>Total Amount</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for i in bookings %}
+              <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.postcode}}</td>
+                <td>{{i.p_date}}</td>
+                <td>{{i.p_time}}</td>
+                <td>{{i.d_date}}</td>
+                <td>{{i.d_time}}</td>
+                <td class = "select"><select class="form-control">
+                  <option selected disabled>View</option>
+                  {% for j in i.products %}        
+                  <option>{{j}}</option>
+                  {%endfor %}
+          </select></td>
+                <td>{{i.total_amount}}</td>
+                <td>
+                    <div class="input-group-prepend">
+                      <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                      <div class="dropdown-menu" >
+                        <a class="dropdown-item" href="admin-del/pricing/{{i._id}}">Delete</a>
+                      </div>
+                    </div>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>        
+      </div>    
+        
+    </div>
+    
+    <a href="/admin-add/pricing"><button type="button" class="btn btn-gradient-success btn-rounded btn-fw">Add Pricing</button></a>
+
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  {% if msg %}
+    {% if error %}
+    <script>
+      Swal.fire(
+      '{{msg}}',
+      '',
+      'error'
+    )
+    </script>
+    {%else%}
+    <script>
+      Swal.fire(
+      '{{msg}}',
+      '',
+      'success'
+    )
+    </script>
+
+    {% endif %}
+  {% endif %}
+{% endblock %}
