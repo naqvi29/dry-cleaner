@@ -1,5 +1,4 @@
 
-from math import prod
 from flask import Flask, redirect , render_template ,jsonify, url_for, request
 import pymongo
 from bson.objectid import ObjectId
